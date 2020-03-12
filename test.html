@@ -1,5 +1,5 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-	<title>CodePath Security Shepherd - Login</title>
+	<title>Captcha the Flag - Login</title>
 
 	<link href="css/theCss.css" rel="stylesheet" type="text/css" media="screen">
 	<link href="css/theResponsiveCss.css" rel="stylesheet" type="text/css" media="screen">
@@ -7,22 +7,14 @@
 <body style="margin: 0px;">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<div id="wrapper">
-	
-
-			<form style="position:absolute;top: 0.5em;right: 0.5em">
-				<select id="lang" name="lang" onchange="submit()">
-					<option value="en">English</option>
-					<option value="es">Español</option>
-					<option value="pt">Português</option>					
-					<option value="ga">Gaeilge</option>
-					<option value="zh">中文</option>
-					<option value="hi">Hindi(Hinglish)</option>
-				</select>
-			</form>
 
 	<!-- start header -->
-	<div id="header">
-		<h1>CodePath Security Shepherd</h1>
+	<div id="header" align="center">
+		<h1 style="font-size:60px;">Captcha the Flag</h1>
+        <br>
+        <br>
+        <br>
+        <br>
 	</div>
 	<!-- end header -->
 	<!-- start page -->
@@ -31,9 +23,9 @@
 		<div id="content" style="margin-right: auto; margin-left: auto; width: 40%; max-width: 320px;">
 			<div class="post">
 				<h1 class="title" id="login_title">Login</h1>
-				<p id="login-info">Use your <a><span>Security Shepherd Credentials<span></span></span></a> to Login.
+				<p id="login-info">Use your <a><span>Top Secret Credentials<span></span></span></a> to Login.
 				
-					</p><p id="register_info">Register a <a href="register.jsp"><span>Security Shepherd Account</span></a> here!</p>
+					</p><p id="register_info">Register a <a href="register.jsp"><span>Captcha the Flag Account</span></a> here!</p>
 				
 				<form name="loginForm" method="POST" action="login">
 					<table>
@@ -50,27 +42,15 @@
 				</form>
 				<br>
 				<br>
-				<div align="center">
-					<a id="tools" href="javascript:;">Do you need a Proxy?</a>
-					<div id="toolsTable" style="display: none;">
-					<p>Download a HTTP Proxy here;</p>
-					<table>
-						<tbody><tr><td align="center"><a href="http://bit.ly/zapWindows">ZAP for Windows</a></td></tr>
-						<tr><td align="center"><a href="http://bit.ly/zapLinux">ZAP for Linux</a></td></tr>
-						<tr><td align="center"><a href="http://bit.ly/zapForMac">ZAP for Mac</a></td></tr>
-					</tbody></table>
-					</div>
-					<br><a id="showAbout" href="javascript:;">About Security Shepherd</a>
-				</div>
+				
 			</div>
 		</div>
 		<div align="justify">
 			
 			<div id="aboutDiv" style="display: none;">
-			<h2 class="title">About Security Shepherd</h2>
-			<p id="about_shepherd_blurb">The OWASP Security Shepherd project has been designed and implemented with the aim of fostering and improving application security awareness among a varied skill-set demographic. This project enables users to learn or to improve upon existing manual penetration testing skills. This is accomplished through lesson and challenge techniques. A lesson provides a user with a lot of help in completing that module, where a challenge puts what the user learned in the lesson to use. </p><p>The OWASP Security Shepherd project covers the OWASP Top Ten web app risks and also covers the OWASP Top Ten Mobile risks as well. Using these risks as a challenge test bed, common security vulnerabilities can be explored and their impact on a system understood. Many of these levels include insufficient mitigations and protections to these risks, such as blacklist filters, atrocious encoding schemes, barbaric security mechanisms and poor security configuration. The modules have been crafted to provide not only a challenge for a security novice, but security professionals as well.</p>
-			<h2 class="title">Project Sponsors</h2><p>The OWASP Security Shepherd project would like to acknowledge and thank the generous support of our sponsors. Please check out their web pages and follow them on twitter.<br><br><a href="https://bit.ly/BccRiskAdvisorySite"><img src="css/images/bccRiskAdvisorySmallLogo.jpg" alt="BCC Risk Advisory"></a><a href="https://bit.ly/EdgeScan"><img src="css/images/edgescanSmallLogo.jpg" alt="EdgeScan"></a><br><a href="https://bit.ly/manicode"><img src="css/images/manicode-logo.png" style="margin-top: 5px;"></a><br><br>The OWASP Security Shepherd Project would also like to thank Dr. Anthony Keane and the ITB Security Research Lab for hosting the public https://owasp.securityShepherd.eu!<br><a href="http://securityresearch.ie/"><img src="https://www.owasp.org/images/thumb/2/24/Fontlogo.png/300px-Fontlogo.png"></a></p>
-			</div>
+			<h2 class="title">About Captcha the Flag</h2>
+			<p id="about_shepherd_blurb">Captcha the Flag was devised by 4 software security students to teach others about the risks and precautions concerning information security. However, it was done with minimal sleep and probably while infected with COVID-19 so please excuse the appearance.</p><p>
+			</p></div>
 		</div>
 		<!-- end content -->
 		<!-- start sidebar -->
@@ -94,7 +74,3 @@
 			$("#aboutDiv").show("slow");
 		});
 	</script>
-	
-
-
-</body></html>
