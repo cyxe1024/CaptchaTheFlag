@@ -4,6 +4,35 @@
 	<link href="css/theCss.css" rel="stylesheet" type="text/css" media="screen">
 	<link href="css/theResponsiveCss.css" rel="stylesheet" type="text/css" media="screen">
 </head>
+//inserted php code to instantiate the database
+	<?php
+$servername = "localhost";
+$username = "root";
+$password = "password";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
+$sql = "SELECT * FROM entries";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "ID: " . $row["CatID"]. " - Name: " . $row["Name"]. " - Color: " . $row["Color"]. "<br>";
+    }
+} else {
+    echo "FAILURE";
+}
+$conn->close();
+?>
+
 <body style="margin: 0px;">
 	<script src="js/jquery.js" type="text/javascript"></script>
 	<div id="wrapper">
