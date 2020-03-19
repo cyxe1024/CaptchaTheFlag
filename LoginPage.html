@@ -1,0 +1,76 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>Captcha the Flag - Login</title>
+
+	<link href="css/theCss.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="css/theResponsiveCss.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body style="margin: 0px;">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<div id="wrapper">
+
+	<!-- start header -->
+	<div id="header" align="center">
+		<h1 style="font-size:60px;">Captcha the Flag</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+	</div>
+	<!-- end header -->
+	<!-- start page -->
+	<div id="page">
+		<!-- start content -->
+		<div id="content" style="margin-right: auto; margin-left: auto; width: 40%; max-width: 320px;">
+			<div class="post">
+				<h1 class="title" id="login_title">Login</h1>
+				<p id="login-info">Use your <a><span>Top Secret Credentials<span></span></span></a> to Login.
+				
+					</p><p id="register_info">Register a <a href="register.jsp"><span>Captcha the Flag Account</span></a> here!</p>
+				
+				<form name="loginForm" method="POST" action="login">
+					<table>
+						<tbody><tr><td><p>Username:</p></td><td><input type="text" name="login" value="" autocomplete="OFF" autofocus=""><p></p></td></tr>
+						<tr><td><p>Password:&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											</p></td><td><input type="password" name="pwd" autocomplete="OFF"><br></td></tr>
+						<tr><td colspan="2" align="center">
+							
+								<input type="submit" name="submit" value="Submit">
+						</td></tr>
+					</tbody></table>
+				</form>
+				<br>
+				<br>
+				
+			</div>
+		</div>
+		<div align="justify">
+			
+			<div id="aboutDiv" style="display: none;">
+			<h2 class="title">About Captcha the Flag</h2>
+			<p id="about_shepherd_blurb">Captcha the Flag was devised by 4 software security students to teach others about the risks and precautions concerning information security. However, it was done with minimal sleep and probably while infected with COVID-19 so please excuse the appearance.</p><p>
+			</p></div>
+		</div>
+		<!-- end content -->
+		<!-- start sidebar -->
+		<!-- end sidebar -->
+	</div>
+	</div>
+	<!-- end page -->
+	<script>
+		jQuery.fn.center = function () 
+		{
+			this.css("position","absolute");
+			this.css("left", (($(window).width() - this.outerWidth()) / 2) + $(window).scrollLeft() + "px");
+			return this;
+		}	
+		
+		$("#tools").click(function(){
+			$("#toolsTable").show("slow");
+		});
+		
+		$("#showAbout").click(function(){
+			$("#aboutDiv").show("slow");
+		});
+	</script>
