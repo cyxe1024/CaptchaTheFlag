@@ -4,6 +4,19 @@
 	<link href="css/theCss.css" rel="stylesheet" type="text/css" media="screen">
 	<link href="css/theResponsiveCss.css" rel="stylesheet" type="text/css" media="screen">
 </head>
+//inserted php code to connect to database
+<?php
+	$db = mysqli_connect('root','root','password','catsdatabase');
+?>
+//inserted php code to call the database	
+	<body>
+		<?php
+			$query = "SELECT * FROM 'entries';";
+			$result = mysqli_fetch_assoc($result)) {
+			//display data on page
+			}
+		?>
+	</body>
 <body style="margin: 0px;">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<div id="wrapper">
