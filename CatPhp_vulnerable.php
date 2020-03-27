@@ -19,7 +19,7 @@
         echo "Name: " . $row["Name"]. " - Color: " . $row["Color"]. " - Gender: " . $row["Gender"]. "<br>";
     }
   } else {
-    echo "The Name you entered doesn't exist!";
+    echo "No results for: " . $entry;
   }
 
 ?>
